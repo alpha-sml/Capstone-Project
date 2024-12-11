@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -32,14 +33,12 @@ button:hover {
     opacity: 0.9;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
-    margin: 0;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 12px 48px;
     border-bottom: 1px solid #fff;
 }
 
@@ -60,34 +59,7 @@ header {
     line-height: 32px;
 }
 
-.section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.skills-list-container {
-    display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-    padding-right: 20px;
-    flex: 1;
-}
-
-.skills-list {
-    font-family: 'Chivo', sans-serif;
-    margin-bottom: 20px;
-    list-style: none;
-    text-align: left;
-    width: auto;
-    margin-top: 0;
-}
-
-.skills-list li {
-    font-family: 'Archivo', sans-serif;
-}
-
+/* Welcome Section */
 .welcome {
     padding: 72px;
     margin: 0;
@@ -115,23 +87,25 @@ header {
     object-fit: cover;
 }
 
-.about img {
-    width: 95vw;
-    height: auto;
-    border-radius: 22px;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
+/* Projects Section */
+.projects.section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.about p {
-    font-family: 'Chivo', sans-serif;
-    font-weight: 900;
-    max-width: 800px;
-    margin: 0 0 30px 0;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 95vw;
+}
+
+.project {
+    width: 100%;
     text-align: left;
-    font-size: 3rem;
-    padding-left: 48px;
 }
 
 .project img {
@@ -143,33 +117,91 @@ header {
     margin-bottom: 0;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    padding: 0;
-    width: 95vw;
-    margin: 0 auto;
-    max-width: 95vw;
-}
-
-.project {
-    width: 100%;
-    text-align: left;
-}
-
 .project p {
     font-family: 'Archivo', sans-serif;
     padding-left: 5px;
     line-height: 24px;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 .sub-description {
-    font-size: 0.8em;
+    font-family: 'Archivo', sans-serif;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
 }
 
+/* Skills Section */
+.skills.section {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 32px 48px;
+}
+
+.section-title {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -4px;
+}
+
+.skills-list-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    flex: 1;
+}
+
+.skills-list {
+    font-weight: 900;
+    margin-bottom: 20px;
+    list-style: none;
+    gap: 32px;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+}
+
+.skills-list li {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.skills-list:nth-child(1) {
+    margin-right: 170px;
+}
+
+.skills-list:nth-child(2) {
+    margin-right: 140px;
+}
+
+/* About Section */
+.about p {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
+    max-width: 800px;
+    margin: 0 0 30px 0;
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 48px;
+}
+
+.about img {
+    width: 95vw;
+    height: auto;
+    border-radius: 22px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Contact Section */
 .contact form {
     display: flex;
     flex-direction: column;
@@ -188,6 +220,7 @@ input, textarea {
     color: #fff;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -203,17 +236,4 @@ input, textarea {
 .social-icons a img {
     width: 24px;
     height: 24px;
-}
-
-.skills.section {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.projects.section {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
 }
