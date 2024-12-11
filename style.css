@@ -201,6 +201,25 @@ header {
     object-fit: cover;
 }
 
+/* CTA Section */
+.cta {
+    margin: 200px auto;
+}
+.cta h1 {
+    font-size: 64px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.cta p {
+    font-size: 24px;
+}
+
+.cta button {
+    font-size: 20px;
+    border-radius: 22px;
+    margin: 30px;
+}
+
 /* Contact Section */
 .contact form {
     display: flex;
