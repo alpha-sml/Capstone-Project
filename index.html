@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Neon Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Chivo:wght@400&family=MuseoModerno:wght@500&family=Archivo:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=MuseoModerno:wght@500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -17,6 +17,7 @@
         <a href="#">Contact</a>
       </nav>
     </header>
+    <hr>
     <main>
       <section class="welcome">
         <h1>Welcome to the Future</h1>
@@ -101,12 +102,31 @@
         <button>View My Work</button>
       </section>
       <hr>
+      <section class="contact-intro">
+        <div class="contact-header">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="contact-desc">Interested in collaborating or have a project in mind? Reach out and let's create something extraordinary.</p>
+        </div>
+      </section>
+      <hr>
       <section class="contact section">
-        <p>Interested in collaborating or have a project in mind? Reach out and let's create something extraordinary.</p>
-        <h2 class="section-title">Contact Me</h2>
+        <p class="form-heading">Your Message</p>
+        <div class="form">
+            <form class="input">
+                <div class="otp">
+                    <input type="number" placeholder="0" min="0" max="9"/>
+                    <input type="number" placeholder="0" min="0" max="9"/>
+                    <input type="number" placeholder="0" min="0" max="9"/>
+                    <input type="number" placeholder="0" min="0" max="9"/>
+                    <input type="number" placeholder="0" min="0" max="9"/>
+                </div>
+                <button type="button" class="button">Send Message</button>
+            </form>
+        </div>
+        <p class="skip">Skip</p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-content">
         <p>Stay Connected</p>
         <input placeholder="Enter your email" type="email" />
