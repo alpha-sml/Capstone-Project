@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Fonts*/
+/* Fonts */
 .brand-logo {
     font-family: 'MuseoModerno';
 }
@@ -27,6 +28,7 @@ body {
     font-family: 'Archivo', sans-serif;
 }
 
+/* Section Styles */
 .section {
     text-align: center;
     padding: 50px 20px;
@@ -415,7 +417,7 @@ button, .button {
     transition: transform 0.3s ease;
 }
 
-/* effects */
+/* Effects */
 .social-icons a img:hover {
     transform: scale(1.1);
 }
@@ -429,7 +431,7 @@ img:hover {
     opacity: 0.9;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
 
     header {
@@ -464,15 +466,32 @@ img:hover {
 
     .skills.section {
         padding: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .skills-list-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .skills-list:nth-child(1),
     .skills-list:nth-child(2) {
         margin-right: 0;
+    }
+
+    .skills-list {
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    .skills-list li {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
     }
 
     .about p {
