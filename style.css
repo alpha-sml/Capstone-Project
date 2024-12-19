@@ -20,8 +20,8 @@ html{
     font-family: 'MuseoModerno';
 }
 
-.main-nav a, .section-title, .form-heading, .welcome h1,
-.footer-content p, .about p, .cta h1, .contact-header h2 {
+.main-nav a, .section-title, .form-heading, #welcome h1,
+.footer-content p, #about p, .cta h1, .contact-header h2 {
     font-family: 'Chivo', sans-serif;
 }
 
@@ -88,7 +88,7 @@ header {
     align-items: center;
 }
 
-.welcome h1 {
+#welcome h1 {
     font-weight: 900;
     font-size: 120px;
     line-height: 120px;
@@ -99,7 +99,7 @@ header {
     animation: fadeIn 2s ease-in-out;
 }
 
-.welcome img {
+#welcome img {
     width: 95vw;
     border-radius: 22px;
     display: block;
@@ -211,7 +211,7 @@ header {
     animation: fadeIn 2s ease-in-out;
 }
 
-.about img {
+#about img {
     width: 95vw;
     height: auto;
     border-radius: 22px;
@@ -256,7 +256,7 @@ header {
     font-size: 48px;
 }
 
-#contact-header {
+.contact-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -483,11 +483,11 @@ img:hover {
         font-size: 20px;
     }
 
-    .welcome {
+    #welcome {
         padding: 30px;
     }
 
-    .welcome h1 {
+    #welcome h1 {
         font-size: 48px;
         line-height: 56px;
     }
@@ -525,12 +525,18 @@ img:hover {
 
     .section-title {
         text-align: center;
+        padding-left: 0;
     }
 
-    .about p {
+    #about p {
         font-size: 32px;
         line-height: 40px;
         padding: 20px;
+        max-width: 100%;
+    }
+
+    #about img {
+        width: 100%;
     }
 
     .contact-header {
@@ -563,8 +569,7 @@ img:hover {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .welcome h1 {
+    #welcome h1 {
         font-size: 80px;
         line-height: 90px;
     }
@@ -573,7 +578,7 @@ img:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .about p {
+    #about p {
         font-size: 48px;
         line-height: 56px;
     }
