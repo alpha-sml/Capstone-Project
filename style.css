@@ -52,6 +52,7 @@ header {
     font-size: 42px;
     font-weight: 500;
     line-height: 42px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .main-nav {
@@ -67,6 +68,7 @@ header {
     font-weight: 400;
     line-height: 32px;
     transition: color 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .main-nav a:hover {
@@ -91,6 +93,7 @@ header {
     text-align: center;
     margin: 30px 20px;
     padding: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .welcome img {
@@ -98,6 +101,7 @@ header {
     border-radius: 22px;
     display: block;
     object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Projects Section */
@@ -105,6 +109,7 @@ header {
     padding: 50px 0;
     display: flex;
     justify-content: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .projects-grid {
@@ -114,6 +119,7 @@ header {
     width: 95vw;
     margin: 0 auto;
     max-width: 95vw;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .project {
@@ -148,6 +154,7 @@ header {
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 32px 48px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .section-title {
@@ -198,6 +205,7 @@ header {
     font-size: 64px;
     line-height: 68px;
     padding-left: 48px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .about img {
@@ -207,11 +215,13 @@ header {
     display: block;
     margin: 0 auto;
     object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* CTA Section */
 .cta {
     margin: 200px auto;
+    animation: fadeIn 2s ease-in-out;
 }
 .cta h1 {
     font-size: 64px;
@@ -249,6 +259,7 @@ header {
     align-items: center;
     padding: 90px 48px;
     margin: 0 48px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Contact Form Section */
@@ -285,6 +296,7 @@ header {
 .form {
     margin: 2rem 0;
     width: 100%;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .form-heading {
@@ -380,6 +392,7 @@ button, .button {
 .footer-content{
     margin: 100px 0px;
     padding-top: 40px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .footer-content p{
@@ -434,6 +447,18 @@ img {
 img:hover {
     transform: scale(1.05);
     opacity: 0.9;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Responsive Styles */
