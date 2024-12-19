@@ -9,7 +9,6 @@ body {
     background-color: #000;
     color: #fff;
     line-height: 1.6;
-    padding-top: 80px;
 }
 
 html{
@@ -49,10 +48,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 48px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
     border-bottom: 2px solid #fff;
 }
 
