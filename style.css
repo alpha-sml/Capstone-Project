@@ -6,11 +6,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
-    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Fonts */
@@ -46,6 +49,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 48px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #fff;
 }
 
 .brand-logo {
@@ -76,7 +84,7 @@ header {
 }
 
 /* Welcome Section */
-.welcome {
+#welcome {
     padding: 72px;
     margin: 0;
     max-width: none;
@@ -105,7 +113,7 @@ header {
 }
 
 /* Projects Section */
-.projects.section {
+#projects.projects.section {
     padding: 50px 0;
     display: flex;
     justify-content: center;
@@ -197,7 +205,7 @@ header {
 }
 
 /* About Section */
-.about p {
+#about p {
     font-weight: 900;
     max-width: 900px;
     margin: 0 0 30px 0;
@@ -253,7 +261,7 @@ header {
     font-size: 48px;
 }
 
-.contact-header {
+#contact-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
