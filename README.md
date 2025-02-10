@@ -6,7 +6,6 @@ Based on your request to indicate that this project is a portfolio template caps
 
 Welcome to **NeonPortfolio**, a portfolio template developed as a capstone project during my first semester. This template showcases innovative projects at the intersection of technology and art, offering immersive experiences in VR, AI, and digital art, all set within a neon-lit, cyberpunk aesthetic.
 
-![Neon Cityscape](assets/neon_cityscape.jpg)
 
 ## Table of Contents
 
